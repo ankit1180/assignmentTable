@@ -1,0 +1,81 @@
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 0; /* Remove border radius for a more Excel-like look */
+  box-shadow: none; /* Remove shadow to mimic Excel’s flat appearance */
+}
+
+.editable-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are joined */
+  font-family: 'Calibri', 'Arial', sans-serif; /* Use a font similar to Excel */
+  background-color: #fff; /* White background for the table */
+}
+
+.editable-table th,
+.editable-table td {
+  border: 1px solid #d0d0d0; /* Light gray borders for a grid-like appearance */
+  padding: 6px 10px; /* Slightly smaller padding to match Excel cells */
+  text-align: left;
+  vertical-align: middle;
+}
+
+.editable-table th {
+  background-color: #e0e0e0; /* Light gray background for header */
+  color: #333;
+  font-weight: bold;
+  border-bottom: 2px solid #b0b0b0; /* Darker bottom border for header */
+}
+
+.editable-table td input {
+  border: none;
+  padding: 4px 8px; /* Less padding to mimic Excel cell input fields */
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff; /* White background for input fields */
+}
+
+.editable-table td input:disabled {
+  background-color: #f1f1f1; /* Light gray for disabled inputs */
+}
+
+.editable-table tr:nth-child(even) {
+  background-color: #fff; /* Light gray for alternating rows */
+}
+
+.editable-table tr.bold-row {
+  font-weight: bold;
+  background-color: #f1f1f1; /* Slightly darker gray for bold rows */
+}
+
+.add-row-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 16px;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Optional: Hover effect for add-row-button */
+/* .add-row-button:hover {
+  color: #0056b3;
+} */
+
+input {
+  outline: none;
+}
+
+.add-row-button:focus {
+  outline: none;
+}
+
+/* Optional: Highlighting rows on hover
+.editable-table tr:hover {
+  background-color: #e6f7ff; /* Light blue background for hover effect */
+/*}*/ 
